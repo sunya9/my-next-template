@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
+    "jest/globals": true,
   },
   extends: [
     "eslint:recommended",
@@ -19,7 +20,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "jest"],
   rules: {
     "react/react-in-jsx-scope": "off",
   },

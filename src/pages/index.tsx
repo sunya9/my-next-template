@@ -1,5 +1,5 @@
 const Index: React.VFC = () => {
-  return <></>;
+  return <p>Hello world</p>;
 };
 
 export default Index;
