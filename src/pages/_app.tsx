@@ -3,7 +3,7 @@ import Head from "next/head";
 import pkg from "../../package.json";
 import "../styles/globals.css";
 
-const MyApp: React.VFC = ({ Component, pageProps }: AppProps) => {
+const MyApp: React.VFC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
