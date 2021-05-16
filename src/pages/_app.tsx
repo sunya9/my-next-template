@@ -1,9 +1,10 @@
-import { AppProps } from "next/app";
+import type { AppProps } from "next/app";
 import Head from "next/head";
 import pkg from "../../package.json";
 import "../styles/globals.css";
 
-const MyApp: React.VFC<AppProps> = ({ Component, pageProps }: AppProps) => {
+const MyApp: React.VFC<AppProps> = (props) => {
+  const { Component, pageProps } = props;
   return (
     <>
       <Head>
